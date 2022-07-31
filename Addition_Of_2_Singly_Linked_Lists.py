@@ -76,3 +76,4 @@ res = LinkedList()
 res.addTwoLists(first.head, second.head)
 
 res.printList()
+#SEE ADDITION OF 2 SINGLY LINKED LIST IMAGE TO UNDERSTAND THE PROCESS MORE CLEARLY.
