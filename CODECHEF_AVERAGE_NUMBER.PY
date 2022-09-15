@@ -1,5 +1,6 @@
 '''
 https://www.codechef.com/LTIME69A/problems/AVG
+https://www.youtube.com/watch?v=Vv0_aS7G6sc
 '''
 t=int(input())
 for j in range(t):
