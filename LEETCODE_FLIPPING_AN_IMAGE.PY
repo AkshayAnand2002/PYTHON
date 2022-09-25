@@ -22,15 +22,16 @@ Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].
 Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 '''
-# Time:  O(n^2)
-# Space: O(1)
 class Solution(object):
-    def flipAndInvertImage(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: List[List[int]]
-        """
-        for row in A:
-            for i in range((len(row)+1) // 2):
-                row[i], row[~i] = row[~i] ^ 1, row[i] ^ 1
-        return A
+    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
+        arr=[]
+        for i in image:
+            i.reverse()
+            brr=[]
+            for j in i:
+                if j==0:
+                    brr.append(1)
+                else:
+                    brr.append(0)
+            arr.append(brr)
+        return arr
