@@ -1,0 +1,31 @@
+weight_list=[]
+no=int(input("ENTER NO. OF VALUES TO ENTER: "))
+for i in range(no):
+    weight=float(input("ENTER WEIGHT: "))
+    weight_list.append(weight)
+print(weight_list)
+weight_list.sort()
+print(weight_list)
+no1=int(input("ENTER NO. OF VALUES YOU WANT TO APPEND NOW: "))
+
+for i in range(no1):
+    weight1=float(input("ENTER WEIGHT: "))
+    weight_list.append(weight1)
+print(weight_list)
+weight_list.sort()
+print(weight_list)
+#inserting weight = 37 at index=4
+weight_list.insert(4,37)
+print(weight_list)
+weight_list.sort()
+print(weight_list)
+print("ENTER ELEMENT OF WHICH NO. OF index IS TO BE founded: ")
+b=float(input())
+print(weight_list.index(b))
+print("ENTER ELEMENT OF WHICH NO. OF OCCURENCES IS TO BE COUNTED: ")
+a=float(input())
+weight_list.count(a)
+print(weight_list.count(a))
+print("REVERSING THE LIST NOW:")
+weight_list.reverse()
+print(weight_list)
